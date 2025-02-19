@@ -6,11 +6,10 @@ from pymongo import MongoClient
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-API_ID = int(os.getenv("22949670"))  
-API_HASH = os.getenv("cef9ce2e0ddcca5188a362802e86fd18")
-BOT_TOKEN = os.getenv("7766714140:AAFZPo9Nr183mrrH2H_frWNd-V7WgxSKnZA")
-FORCE_SUB_CHANNEL = os.getenv("https://t.me/moviestudio444")
-MONGO_URI = os.getenv("mongodb+srv://atanusikdar2:MOVIESTUDIO2006@moviestudio.j78xo.mongodb.net/?retryWrites=true&w=majority&appName=Moviestudio")
+heroku config:set API_ID=22949670
+heroku config:set API_HASH=cef9ce2e0ddcca5188a362802e86fd18
+heroku config:set BOT_TOKEN=YOUR_BOT_TOKEN
+heroku config:set MONGO_URI=mongodb+srv://atanusikdar2:MOVIESTUDIO2006@moviestudio.j78xo.mongodb.net/?retryWrites=true&w=majority&appName=Moviestudio
 LOG_CHANNEL = os.getenv("https://t.me/+YkjhiiuiQb40OWE1")
 ADMIN_ID = int(os.getenv("5558799839"))
 SHORTENER_API = os.getenv("88184deffcb7348f0aabf0468eb14516941fc646")
